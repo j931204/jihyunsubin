@@ -1548,7 +1548,7 @@ export default function App() {
                 <motion.a 
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  href="https://remix-remix-remix-1000166716944.us-west1.run.app" 
+                  href="https://jihyun1.vercel.app/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex flex-col items-center gap-2 group"
