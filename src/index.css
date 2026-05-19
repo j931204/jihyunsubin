@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nanum Gothic", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #0500A5;
+  --color-brand: #0500A5;
+  --color-plus: #22741C;
+  --color-minus: #980000;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-neutral-900;
+  }
+
+  /* Disable focus outlines for SVGs in charts to prevent black selection lines */
+  .recharts-surface:focus,
+  .recharts-wrapper:focus,
+  .recharts-legend-item:focus,
+  .recharts-dot:focus,
+  .recharts-rectangle:focus,
+  .recharts-sector:focus,
+  svg:focus,
+  svg *,
+  *:focus,
+  *:active,
+  *:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+
+  /* Remove blue/black tap highlight on mobile devices */
+  * {
+    -webkit-tap-highlight-color: transparent !important;
+    -webkit-touch-callout: none;
+  }
+}
